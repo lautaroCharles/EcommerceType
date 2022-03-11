@@ -18,7 +18,7 @@ const ImageProduct = () => {
                         <div>
                             <ul style={{listStyle: 'none'}}>
                                 <li>
-                                <img src={data.img} style={{height: '30px'}} onMouseEnter={() => setImgNew(data.img)}/>
+                                <img src={data.img} style={{height: '70px', paddingBottom: '20px'}} onMouseEnter={() => setImgNew(data.img)}/>
                                 </li>
                             </ul>
                         </div>
@@ -29,7 +29,7 @@ const ImageProduct = () => {
             <li>
                 <ul >
                     <li style={{display: 'inline'}}>
-                      <img src={imgNew} style={{height: '30px'}}/>
+                      <img src={imgNew} style={{height: '200px', marginTop: '-280px', marginLeft:'80px'}}/>
                     </li>
                 </ul>
                 </li>

@@ -1,5 +1,7 @@
-.horizontal ul li{
+.horizontal ul {
     display: inline;
 }
-
+ li{
+    display: inline;
+}
   

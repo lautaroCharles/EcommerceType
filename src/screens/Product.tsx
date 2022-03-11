@@ -20,9 +20,31 @@ const ProductPage = () => {
     console.log(product)
 
     return(
-        <div>
+        <div >
             <NavBar location={locationurl}/>
-            <ImageProduct/>
+            
+            <div className="row align-items-md-stretch">
+            <div className="col-md-6">
+                <ImageProduct/>
+                </div>
+           
+
+                <div className="col-md-6">
+                <h1>More data</h1>
+            <p>
+                    Data Data
+                </p>                <p>
+                    Data Data
+                </p>                <p>
+                    Data Data
+                </p>                <p>
+                    Data Data
+                </p>                <p>
+                    Data Data
+                </p>
+            </div>
+            </div>
+           
         </div>
     )
 }
