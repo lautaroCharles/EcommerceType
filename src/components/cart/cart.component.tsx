@@ -5,7 +5,6 @@ const CartComponent = (props: any) => {
     return(
         
         <div>
-           
                     {props.cart.map((data:any) => {
                         return(
                             <div className="card mb-3" style={{maxWidth: '650px', marginTop: '20px', marginLeft: '10px'}}>

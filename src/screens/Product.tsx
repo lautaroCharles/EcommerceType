@@ -2,8 +2,9 @@ import NavBar from '../components/navBar/navBar';
 import { useLocation, useParams } from 'react-router-dom';
 import React, { useEffect, useState, useContext } from 'react';
 import shopContext from '../context/shopContext';
-import Card from 'components/card/component/cardComponent';
-import ImageProduct from '../components/img/image.product';
+import Card from '../components/card/component/cardComponent';
+import ImageProduct from '../components/productPageComponents/img/image.product';
+import ProductInfo from '../components/productPageComponents/productInfo/productInfo';
 
 const ProductPage = () => {
     const location:any = useLocation()
@@ -25,23 +26,12 @@ const ProductPage = () => {
             
             <div className="row align-items-md-stretch">
             <div className="col-md-6">
-                <ImageProduct/>
+                <ImageProduct products={product}/>
                 </div>
            
 
                 <div className="col-md-6">
-                <h1>More data</h1>
-            <p>
-                    Data Data
-                </p>                <p>
-                    Data Data
-                </p>                <p>
-                    Data Data
-                </p>                <p>
-                    Data Data
-                </p>                <p>
-                    Data Data
-                </p>
+                    <ProductInfo products={product}/>
             </div>
             </div>
            

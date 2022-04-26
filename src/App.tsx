@@ -10,6 +10,7 @@ import Home from "./screens/home";
 import Cart from './screens/cart'
 import Main from './screens/main';
 import ProductPage from './screens/Product';
+
 function App() {
   const state = useContext(shopContext);
 

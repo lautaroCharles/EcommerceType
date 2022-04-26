@@ -1,13 +1,17 @@
 import React, {useContext, useState} from 'react';
-import shopContext from '../../context/shopContext';
+import shopContext from '../../../context/shopContext';
 import './image.product.css'
 
-const ImageProduct = () => {
+const ImageProduct = (products:any) => {
     const state = useContext(shopContext)
     const [imgNew, setImgNew] = useState()
 
     console.log(imgNew)
 
+    const onMouseOverFunction = (data:any) => {
+        setImgNew(data.img)
+
+    } 
     return(
         <div className="horizontal">
             <ul className='horizontal-list'>
@@ -18,7 +22,9 @@ const ImageProduct = () => {
                         <div>
                             <ul style={{listStyle: 'none'}}>
                                 <li>
-                                <img src={data.img} style={{height: '70px', paddingBottom: '20px'}} onMouseEnter={() => setImgNew(data.img)}/>
+                                    <div style={{marginLeft: '10px', width: '90px', borderStyle: 'dotted'}} onMouseEnter={() => onMouseOverFunction(data)}>
+                                    <img src={data.img} style={{height: '70px'}} />
+                                    </div>
                                 </li>
                             </ul>
                         </div>
